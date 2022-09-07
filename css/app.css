@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgclr-drk-cyan {
+  background: #3c8067;
+}
+.bgclr-cream {
+  background: #f2ebe3;
+}
+
+.clr-drk-cyan {
+  color: #3c8067;
+}
+.clr-drker-cyan {
+  color: #1c3b30;
+}
+.clr-drk-blue {
+  color: #1c232b;
+}
+.clr-drk-grayblue {
+  color: #6c7289;
+}
