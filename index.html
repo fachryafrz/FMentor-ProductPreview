@@ -24,52 +24,48 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Ion Icons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </head>
   <body
-    class="bgclr-cream w-screen h-screen flex justify-center items-center font-sans"
+    class="bg-cream w-screen h-screen flex justify-center items-center font-sans"
   >
-    <div class="w-80 rounded-lg overflow-hidden">
+    <div
+      class="w-80 md:w-fit md:max-w-xl rounded-lg overflow-hidden md:grid md:grid-cols-2 hover:shadow-lg transition-all"
+    >
       <img
         src="/images/image-product-mobile.jpg"
         alt="Gabrielle Essence Eau De Parfum"
+        class="md:hidden"
       />
-      <main class="bg-white p-4 flex flex-col gap-2">
+      <img
+        src="/images/image-product-desktop.jpg"
+        alt="Gabrielle Essence Eau De Parfum"
+        class="hidden md:block"
+      />
+      <main class="bg-white p-4 md:p-8 flex flex-col gap-2 md:justify-between">
         <span
-          class="clr-drk-grayblue uppercase text-xs"
+          class="text-blue-gray uppercase text-xs"
           style="letter-spacing: 4px"
           >Perfume</span
         >
-        <h1 class="font-serif font-bold text-3xl text-blue-dark">
+        <h1 class="font-serif font-bold text-3xl text-blue-dark leading-7">
           Gabrielle Essence Eau De Parfum
         </h1>
-        <p class="clr-drk-grayblue text-sm mt-1">
+        <p class="text-blue-gray text-sm mt-2 leading-6">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
         <div class="flex gap-4 my-3 items-center">
-          <div class="clr-drk-cyan font-bold font-serif text-3xl">$149.99</div>
-          <div class="clr-drk-grayblue line-through text-sm">$169.99</div>
+          <div class="text-cyan-dark font-bold font-serif text-3xl">
+            $149.99
+          </div>
+          <div class="text-blue-gray line-through text-sm">$169.99</div>
         </div>
-        <a
-          href="#"
-          class="bgclr-drk-cyan text-center p-3 rounded-lg text-white flex items-center justify-center gap-2 text-sm hover:bg-cyan-darker"
-          ><ion-icon
-            name="cart-outline"
-            class="text-lg"
-            style="--ionicon-stroke-width: 2rem"
-          ></ion-icon>
-          Add to Cart</a
+        <button
+          onclick="return alert('Success adding Gabrielle Essence Eau De Parfum to cart!')"
+          class="bg-cyan-dark text-center p-3 rounded-lg text-white flex items-center justify-center gap-2 text-sm hover:bg-cyan-darker transition-all"
         >
+          <img src="/images/icon-cart.svg" alt="Cart" /> Add to Cart
+        </button>
       </main>
     </div>
     <div class="absolute bottom-0 inset-x-0 text-center text-sm">
@@ -77,10 +73,10 @@
       <a
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
-        class="clr-drk-cyan font-bold"
+        class="text-cyan-dark font-bold"
         >Frontend Mentor</a
       >. Coded by
-      <a href="https://github.com/fachryafrz" class="clr-drk-cyan font-bold"
+      <a href="https://github.com/fachryafrz" class="text-cyan-dark font-bold"
         >fachryafrz</a
       >.
     </div>
